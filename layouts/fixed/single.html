@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+	{{ partial "head.html" . }}
+
+  <body id="page-top" class="index">
+		<section class="main post non-narrow zero-top-spacing">
+				<div class="container">
+						<div class="content">
+								<div class="front-matter">
+										<div class="title-container">
+												<div class="initials"><a href="{{ .Site.BaseURL }}">{{ .Site.Params.Initials }}</a></div>
+										</div>
+								</div>
+								<div class="markdown">
+										{{ .Content }}
+										<br>
+										<p><a href="/">Volver</a></p>
+								</div>
+								<br>
+						</div>
+				</div>
+		</section>
+
+	{{ partial "footer.html" . }}
+  </body>
+</html>
