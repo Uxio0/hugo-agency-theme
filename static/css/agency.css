@@ -971,6 +971,10 @@ body {
     text-shadow: 1px 1px 1px black;
 }
 
+.navbar-default .nav li a {
+  letter-spacing: normal;
+}
+
 header .intro-text .intro-lead-in .title {
   display: inline;
   background-color: rgba(0, 0, 0, 0.4);
