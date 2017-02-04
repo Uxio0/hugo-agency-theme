@@ -310,6 +310,13 @@ header .intro-text .intro-lead-in {
     text-shadow: 1px 1px 1px black;
 }
 
+header .intro-text .intro-lead-in .title {
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 3px;
+}
+
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
