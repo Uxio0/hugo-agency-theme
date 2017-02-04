@@ -5,15 +5,19 @@
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">{{ with .Site.Params.services.title }}{{ . }}{{ end }}</h2>
         <h3 class="section-subheading text-muted">{{ with .Site.Params.services.subtitle }}{{ . | markdownify }}{{ end }}</h3>
-				{{ with .Site.Params.services.mapsIframe }}
-					{{ if . }}
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="{{ . }}" style="border:0" allowfullscreen></iframe>
-						</div>
-					{{ end }}
-				{{ end }}
       </div>
     </div>
+    {{ with .Site.Params.services.mapsIframe }}
+      {{ if . }}
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="map-iframe embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="{{ . }}" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    {{ end }}
     {{ range .Site.Params.services.row }}
       <div class="row text-center">
         {{ range .list }}

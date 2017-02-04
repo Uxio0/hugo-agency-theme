@@ -177,7 +177,6 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #fed136;
-    text-shadow: 1px 1px 1px black;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -309,13 +308,6 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     line-height: 22px;
     text-shadow: 1px 1px 1px black;
-}
-
-header .intro-text .intro-lead-in .title {
-  display: inline;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 5px;
-  border-radius: 3px;
 }
 
 header .intro-text .intro-heading {
@@ -969,4 +961,23 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
-}-
+}
+
+/*
+ * Custom styles
+*/
+
+.navbar-default .navbar-brand {
+    text-shadow: 1px 1px 1px black;
+}
+
+header .intro-text .intro-lead-in .title {
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+section#services .map-iframe {
+    margin-bottom: 75px;
+}
