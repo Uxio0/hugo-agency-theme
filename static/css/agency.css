@@ -985,3 +985,7 @@ header .intro-text .intro-lead-in .title {
 section#services .map-iframe {
     margin-bottom: 75px;
 }
+
+section#portfolio .portfolio-item .img-responsive {
+  width: 100%;
+}
