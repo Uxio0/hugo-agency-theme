@@ -986,6 +986,25 @@ section#services .map-iframe {
     margin-bottom: 75px;
 }
 
+/* Fix mobile width */
 section#portfolio .portfolio-item .img-responsive {
   width: 100%;
 }
+
+/****/
+@media (min-width: 768px) {
+  section#portfolio .portfolio-item .img-responsive {
+    height: 345px;
+  }
+}
+@media (min-width: 992px) {
+  section#portfolio .portfolio-item .img-responsive {
+    height: 132px;
+  }
+}
+@media (min-width: 1200px) {
+  section#portfolio .portfolio-item .img-responsive {
+    height: 165px;
+  }
+}
+/***/
