@@ -1008,3 +1008,10 @@ section#portfolio .portfolio-item .img-responsive {
   }
 }
 /***/
+
+/* Show a member per row in small devices */
+@media (max-width: 520px) {
+  section#team .team-item {
+    width: 100%;
+  }
+}
