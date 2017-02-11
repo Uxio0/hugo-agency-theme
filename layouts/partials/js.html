@@ -19,3 +19,16 @@
 {{ range .Site.Params.custom_js }}
   <script src="{{ . | absURL }}"></script>
 {{ end }}
+
+<!-- Custom -->
+
+<!-- Enable/disable map iframe scroll-zoom -->
+{{ if .Site.Params.services.mapsIframe }}
+  <script>
+  $('.map-container')
+      .click(function(){
+              $(this).find('.overlay').addClass('clicked')})
+      .mouseleave(function(){
+              $(this).find('.overlay').removeClass('clicked')});
+  </script>
+{{ end }}
