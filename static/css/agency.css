@@ -1001,6 +1001,24 @@ section#portfolio .portfolio-item .img-responsive {
   width: 100%;
 }
 
+/* Portofilio modal */
+.portfolio-modal .modal-content {
+  padding: 40px 0;
+}
+
+.portfolio-modal .close-modal {
+  height: 45px;
+  width: 45px;
+  right: 30px;
+  top: 20px;
+  z-index: 9000;
+}
+
+.portfolio-modal .close-modal .lr .rl, .portfolio-modal .close-modal .lr {
+  height: 45px;
+}
+/* */
+
 /****/
 @media (min-width: 768px) {
   section#portfolio .portfolio-item .img-responsive {
