@@ -989,7 +989,7 @@ section#services .map-container {
 
 section#services .overlay {
   pointer-events: auto;
-  z-index: 9000;
+  z-index: 100;
 }
 
 section#services .overlay.clicked{
