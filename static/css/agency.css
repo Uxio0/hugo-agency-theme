@@ -1008,6 +1008,15 @@ section#portfolio .portfolio-items-wrapper {
   align-items: stretch;
 }
 
+section#portfolio .portfolio-item {
+  background-color: #fff;
+  padding-top: 15px;
+}
+
+section#portfolio .portfolio-caption .text-muted{
+  line-height: 20px;
+}
+
 /* Fix mobile width */
 section#portfolio .portfolio-item .img-responsive {
   width: 100%;
