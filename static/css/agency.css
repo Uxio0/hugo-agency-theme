@@ -1069,3 +1069,10 @@ section#team .team-member img {
 }
 
 /****/
+
+footer .social-buttons.fixed {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 150;
+}

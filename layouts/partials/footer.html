@@ -13,6 +13,13 @@
           {{ end }}
 
         </ul>
+        <ul class="list-inline social-buttons fixed">
+
+          {{ range .Site.Params.footer.social }}
+            <li><a href="{{ .link }}"><i class="fa {{ .icon }}"></i></a></li>
+          {{ end }}
+
+        </ul>
       </div>
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
