@@ -996,10 +996,23 @@ section#services .overlay.clicked{
     pointer-events: none;
 }
 
+section#portfolio .portfolio-items-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
 /* Fix mobile width */
 section#portfolio .portfolio-item .img-responsive {
   width: 100%;
 }
+
 
 /* Portofilio modal */
 .portfolio-modal .modal-content {
@@ -1019,23 +1032,6 @@ section#portfolio .portfolio-item .img-responsive {
 }
 /* */
 
-/****/
-@media (min-width: 768px) {
-  section#portfolio .portfolio-item .img-responsive {
-    height: 345px;
-  }
-}
-@media (min-width: 992px) {
-  section#portfolio .portfolio-item .img-responsive {
-    height: 132px;
-  }
-}
-@media (min-width: 1200px) {
-  section#portfolio .portfolio-item .img-responsive {
-    height: 165px;
-  }
-}
-/***/
 
 /* Show a member per row in small devices */
 @media (max-width: 520px) {
