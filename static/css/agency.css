@@ -982,6 +982,18 @@ header .intro-text .intro-lead-in .title {
   border-radius: 3px;
 }
 
+aside {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 section#services .map-container {
     margin-bottom: 75px;
     position:relative; /* Used with overlay class to disable scroll-zoom */
@@ -994,6 +1006,10 @@ section#services .overlay {
 
 section#services .overlay.clicked{
     pointer-events: none;
+}
+
+section#portfolio h3.section-subheading {
+  margin-bottom: 10px;
 }
 
 section#portfolio .portfolio-items-wrapper {
@@ -1053,13 +1069,3 @@ section#team .team-member img {
 }
 
 /****/
-
-aside {
-  padding-bottom: 100px;
-}
-
-@media (min-width: 768px) {
-  aside {
-      padding-bottom: 150px;
-  }
-}
