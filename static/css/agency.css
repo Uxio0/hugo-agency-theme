@@ -1067,6 +1067,9 @@ section#portfolio .portfolio-item .img-responsive {
 
 
 /** Team members **/
+section#team .section-heading {
+  font-size: 35px;
+}
 
 section#team .team-member h3 {
   font-size: 16px;
