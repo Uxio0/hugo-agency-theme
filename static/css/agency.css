@@ -1041,6 +1041,11 @@ section#portfolio .portfolio-caption .text-muted{
   line-height: 20px;
 }
 
+section#portfolio ul.social-buttons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* Fix mobile width */
 section#portfolio .portfolio-item .img-responsive {
   width: 100%;
