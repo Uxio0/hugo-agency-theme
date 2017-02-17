@@ -1114,6 +1114,14 @@ aside .clients-list {
           align-items: center;
 }
 
+aside .clients-list.bronze {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 
 /*** Clients categories **/
 .category-title {

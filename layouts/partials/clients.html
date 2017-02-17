@@ -60,14 +60,14 @@
         <h3 class="section-heading"><span class="category-title-bronze">Bronce</span></h3>
       </div>
     </div>
-    <div class="row clients-list{{ if .Site.Params.clients_list.center }} flexbox-center{{ end }}">
+    <div class="row clients-list bronze{{ if .Site.Params.clients_list.center }} flexbox-center{{ end }}">
 
       {{ range .Site.Params.clients.bronze }}
         <div class="col-xs-6 col-sm-3 col">
           {{ $url := printf "img/logos/%s" .logo }}
           {{ if .link }}
             <a href="{{ .link }}">
-							<img style="max-height: 50px;" src="{{ $url | absURL }}" class="img-responsive img-centered" alt="{{ .alt }}">
+							<img style="max-height: 80px;" src="{{ $url | absURL }}" class="img-responsive img-centered" alt="{{ .alt }}">
             </a>
           {{ else }}
             <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="{{ .alt }}">
