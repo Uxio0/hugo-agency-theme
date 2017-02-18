@@ -41,6 +41,12 @@
           </li>
         {{ end }}
 
+        {{ if .Site.Params.schedule.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}{{ .Site.Params.schedule.file }}" target="_blank">{{ with .Site.Params.navigation.schedule }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
         {{ if .Site.Params.portfolio.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
