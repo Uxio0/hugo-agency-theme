@@ -1150,11 +1150,7 @@ aside .clients-list.bronze {
 /** **/
 
 /* Schedule */
-#mariadefDIV_1 header {
-  background-image: none;
-  background-color: #222;
-}
-#mariadefDIV_1 {
+.schedule {
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1184,11 +1180,11 @@ aside .clients-list.bronze {
     margin: 0px;
 }
 
-#mariadefDIV_1 h1,#mariadefDIV_1 h2,#mariadefDIV_1 h3,#mariadefDIV_1 h4,#mariadefDIV_1 h5,#mariadefDIV_1 h6{
+.schedule h1, .schedule h2, .schedule h3, .schedule h4, .schedule h5, .schedule h6{
   text-transform: none;
 }
 
-#mariadefDIV_72 {
+.schedule-day {
     box-sizing: border-box;
     height: auto;
     min-height: auto;
@@ -1205,7 +1201,7 @@ aside .clients-list.bronze {
     font: normal normal normal normal 16px / normal sans-serif;
 }
 
-#mariadefHEADER_73 {
+.schedule-day-header {
     box-sizing: border-box;
     height: 39px;
     -webkit-text-size-adjust: 100%;
@@ -1218,9 +1214,11 @@ aside .clients-list.bronze {
         -ms-transform-origin: 184.359px 19.5px;
             transform-origin: 184.359px 19.5px;
     font: normal normal normal normal 16px / normal sans-serif;
+    background-image: none;
+    background-color: #222;
 }
 
-#mariadefH4_74 {
+.schedule-day-header-weekday {
     box-sizing: border-box;
     height: 39px;
     text-align: left;
@@ -1247,81 +1245,7 @@ aside .clients-list.bronze {
     font-family: sans-serif;
 }
 
-
-#mariadefH5_76 {
-    box-sizing: border-box;
-    color: rgb(38, 138, 38);
-    height: 15px;
-    min-height: auto;
-    min-width: auto;
-    text-align: left;
-    -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-    /*width: 324.719px;*/
-    -webkit-column-rule-color: rgb(38, 138, 38);
-       -moz-column-rule-color: rgb(38, 138, 38);
-            column-rule-color: rgb(38, 138, 38);
-    -webkit-perspective-origin: 162.359px 7.5px;
-            perspective-origin: 162.359px 7.5px;
-    -webkit-transform-origin: 162.359px 7.5px;
-        -ms-transform-origin: 162.359px 7.5px;
-            transform-origin: 162.359px 7.5px;
-    border: 0px none rgb(38, 138, 38);
-    font: normal normal bold normal 13.28px / normal sans-serif;
-    margin: 2px;
-    outline: rgb(38, 138, 38) none 0px;
-}
-
-#mariadefH5_77 {
-    box-sizing: border-box;
-    /*height: 15px;*/
-    min-height: auto;
-    min-width: auto;
-    text-align: left;
-    -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-    /*width: 324.719px;*/
-    -webkit-perspective-origin: 162.359px 7.5px;
-            perspective-origin: 162.359px 7.5px;
-    -webkit-transform-origin: 162.359px 7.5px;
-        -ms-transform-origin: 162.359px 7.5px;
-            transform-origin: 162.359px 7.5px;
-    font: normal normal bold normal 13.28px / normal sans-serif;
-    margin: 2px;
-}
-
-#mariadefSPAN_79 {
-    box-sizing: border-box;
-    text-align: left;
-    -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-    font: normal normal normal normal 13.28px / normal sans-serif;
-    font-weight: normal;
-}
-
-#mariadefH5_78 {
-    box-sizing: border-box;
-    height: 15px;
-    min-height: auto;
-    min-width: auto;
-    text-align: left;
-    -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-            text-size-adjust: 100%;
-    /*width: 324.719px;*/
-    -webkit-perspective-origin: 162.359px 7.5px;
-            perspective-origin: 162.359px 7.5px;
-    -webkit-transform-origin: 162.359px 7.5px;
-        -ms-transform-origin: 162.359px 7.5px;
-            transform-origin: 162.359px 7.5px;
-    font: normal normal bold normal 13.28px / normal sans-serif;
-    margin: 2px;
-}
-
-#mariadefHGROUP_75 {
+.schedule-day-item {
     box-sizing: border-box;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1355,8 +1279,83 @@ aside .clients-list.bronze {
     padding: 10px;
 }
 
+
+.schedule-day-item-time {
+    box-sizing: border-box;
+    color: rgb(38, 138, 38);
+    height: 15px;
+    min-height: auto;
+    min-width: auto;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 324.719px;*/
+    -webkit-column-rule-color: rgb(38, 138, 38);
+       -moz-column-rule-color: rgb(38, 138, 38);
+            column-rule-color: rgb(38, 138, 38);
+    -webkit-perspective-origin: 162.359px 7.5px;
+            perspective-origin: 162.359px 7.5px;
+    -webkit-transform-origin: 162.359px 7.5px;
+        -ms-transform-origin: 162.359px 7.5px;
+            transform-origin: 162.359px 7.5px;
+    border: 0px none rgb(38, 138, 38);
+    font: normal normal bold normal 13.28px / normal sans-serif;
+    margin: 2px;
+    outline: rgb(38, 138, 38) none 0px;
+}
+
+.schedule-day-item-title {
+    box-sizing: border-box;
+    /*height: 15px;*/
+    min-height: auto;
+    min-width: auto;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 324.719px;*/
+    -webkit-perspective-origin: 162.359px 7.5px;
+            perspective-origin: 162.359px 7.5px;
+    -webkit-transform-origin: 162.359px 7.5px;
+        -ms-transform-origin: 162.359px 7.5px;
+            transform-origin: 162.359px 7.5px;
+    font: normal normal bold normal 13.28px / normal sans-serif;
+    margin: 2px;
+}
+
+.schedule-day-item-speakersWrapper {
+    box-sizing: border-box;
+    height: 15px;
+    min-height: auto;
+    min-width: auto;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 324.719px;*/
+    -webkit-perspective-origin: 162.359px 7.5px;
+            perspective-origin: 162.359px 7.5px;
+    -webkit-transform-origin: 162.359px 7.5px;
+        -ms-transform-origin: 162.359px 7.5px;
+            transform-origin: 162.359px 7.5px;
+    font: normal normal bold normal 13.28px / normal sans-serif;
+    margin: 2px;
+}
+
+.schedule-day-item-speakers {
+    box-sizing: border-box;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    font: normal normal normal normal 13.28px / normal sans-serif;
+    font-weight: normal;
+}
+
+
 @media(max-width: 375px) {
-    #mariadefHGROUP_75 {
+    .schedule-day-item {
       height: 180px;
       min-height: 180px;
     }

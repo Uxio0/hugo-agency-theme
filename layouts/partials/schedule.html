@@ -11,101 +11,32 @@
     </div>
 
     <div class="row">
-      <div id="mariadefDIV_1">
+      <div class="schedule">
 
-        {{ with .Site.Data.schedule.monday }}
-        <div id="mariadefDIV_72"  class="col-xs-6 col-sm-3">
-          <header id="mariadefHEADER_73">
-            <h4 id="mariadefH4_74">
-              {{ .day }}
+        {{ range sort .Site.Data.schedule "date" "asc" }}
+        <div class="col-xs-6 col-sm-3 schedule-day">
+          <header class="schedule-day-header">
+            <h4 class="schedule-day-header-weekday">
+              {{ .weekday }}
             </h4>
           </header>
           {{ range .items }}
-            <hgroup id="mariadefHGROUP_75">
-              <h5 id="mariadefH5_76">
+            <hgroup class="schedule-day-item">
+              <h5 class="schedule-day-item-time">
                 {{ .time }}
               </h5>
-              <h5 id="mariadefH5_77">
+              <h5 class="schedule-day-item-title">
                 {{ .title }} {{ with .duration }} ({{ . }}) {{ end }}
               </h5>
-              <h5 id="mariadefH5_78">
-                <span id="mariadefSPAN_79">{{ with .speakers }}{{ . }}{{ end }}</span>
+              <h5 class="schedule-day-item-speakersWrapper">
+                <span class="schedule-day-item-speakers">{{ with .speakers }}{{ . }}{{ end }}</span>
               </h5>
             </hgroup>
           {{ end }}
         </div>
         {{ end }}
 
-        {{ with .Site.Data.schedule.tuesday }}
-        <div id="mariadefDIV_72"  class="col-xs-6 col-sm-3">
-          <header id="mariadefHEADER_73">
-            <h4 id="mariadefH4_74">
-              {{ .day }}
-            </h4>
-          </header>
-          {{ range .items }}
-            <hgroup id="mariadefHGROUP_75">
-              <h5 id="mariadefH5_76">
-                {{ .time }}
-              </h5>
-              <h5 id="mariadefH5_77">
-                {{ .title }} {{ with .duration }} ({{ . }}) {{ end }}
-              </h5>
-              <h5 id="mariadefH5_78">
-                <span id="mariadefSPAN_79">{{ with .speakers }}{{ . }}{{ end }}</span>
-              </h5>
-            </hgroup>
-          {{ end }}
-        </div>
-        {{ end }}
-
-        {{ with .Site.Data.schedule.thursday }}
-        <div id="mariadefDIV_72"  class="col-xs-6 col-sm-3">
-          <header id="mariadefHEADER_73">
-            <h4 id="mariadefH4_74">
-              {{ .day }}
-            </h4>
-          </header>
-          {{ range .items }}
-            <hgroup id="mariadefHGROUP_75">
-              <h5 id="mariadefH5_76">
-                {{ .time }}
-              </h5>
-              <h5 id="mariadefH5_77">
-                {{ .title }}
-              </h5>
-              <h5 id="mariadefH5_78">
-                <span id="mariadefSPAN_79">{{ with .speakers }}{{ . }}{{ end }}</span>
-              </h5>
-            </hgroup>
-          {{ end }}
-        </div>
-        {{ end }}
-
-        {{ with .Site.Data.schedule.friday }}
-        <div id="mariadefDIV_72"  class="col-xs-6 col-sm-3">
-          <header id="mariadefHEADER_73">
-            <h4 id="mariadefH4_74">
-              {{ .day }}
-            </h4>
-          </header>
-          {{ range .items }}
-            <hgroup id="mariadefHGROUP_75">
-              <h5 id="mariadefH5_76">
-                {{ .time }}
-              </h5>
-              <h5 id="mariadefH5_77">
-                {{ .title }}
-              </h5>
-              <h5 id="mariadefH5_78">
-                <span id="mariadefSPAN_79">{{ with .speakers }}{{ . }}{{ end }}</span>
-              </h5>
-            </hgroup>
-          {{ end }}
-        </div>
-        {{ end }}
       </div>
-
     </div>
   </div>
 </section>
