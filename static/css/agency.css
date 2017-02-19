@@ -1148,3 +1148,216 @@ aside .clients-list.bronze {
 }
 
 /** **/
+
+/* Schedule */
+#mariadefDIV_1 header {
+  background-image: none;
+  background-color: #222;
+}
+#mariadefDIV_1 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    /*letter-spacing: -4.96px;*/
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    width: 100%;
+    -webkit-perspective-origin: 553.094px 859.5px;
+            perspective-origin: 553.094px 859.5px;
+    -webkit-transform-origin: 553.094px 859.5px;
+        -ms-transform-origin: 553.094px 859.5px;
+            transform-origin: 553.094px 859.5px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    font: normal normal normal normal 16px / normal FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+#mariadefDIV_1 h1,#mariadefDIV_1 h2,#mariadefDIV_1 h3,#mariadefDIV_1 h4,#mariadefDIV_1 h5,#mariadefDIV_1 h6{
+  text-transform: none;
+}
+
+#mariadefDIV_72 {
+    box-sizing: border-box;
+    height: auto;
+    min-height: auto;
+    min-width: auto;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    vertical-align: top;
+    -webkit-perspective-origin: 184.359px 859.5px;
+            perspective-origin: 184.359px 859.5px;
+    -webkit-transform-origin: 184.359px 859.5px;
+        -ms-transform-origin: 184.359px 859.5px;
+            transform-origin: 184.359px 859.5px;
+    font: normal normal normal normal 16px / normal sans-serif;
+}
+
+#mariadefHEADER_73 {
+    box-sizing: border-box;
+    height: 39px;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 368.719px;*/
+    -webkit-perspective-origin: 184.359px 19.5px;
+            perspective-origin: 184.359px 19.5px;
+    -webkit-transform-origin: 184.359px 19.5px;
+        -ms-transform-origin: 184.359px 19.5px;
+            transform-origin: 184.359px 19.5px;
+    font: normal normal normal normal 16px / normal sans-serif;
+}
+
+#mariadefH4_74 {
+    box-sizing: border-box;
+    height: 39px;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 348.719px;*/
+    -webkit-perspective-origin: 174.359px 19.5px;
+            perspective-origin: 174.359px 19.5px;
+    -webkit-transform-origin: 174.359px 19.5px;
+        -ms-transform-origin: 174.359px 19.5px;
+            transform-origin: 174.359px 19.5px;
+    border-bottom: 1px inset rgba(33, 33, 33, 0.2);
+    margin: 0px 10px;
+    padding: 10px;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    font-size: 15px;
+    line-height: normal;
+    font-family: sans-serif;
+}
+
+
+#mariadefH5_76 {
+    box-sizing: border-box;
+    color: rgb(38, 138, 38);
+    height: 15px;
+    min-height: auto;
+    min-width: auto;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 324.719px;*/
+    -webkit-column-rule-color: rgb(38, 138, 38);
+       -moz-column-rule-color: rgb(38, 138, 38);
+            column-rule-color: rgb(38, 138, 38);
+    -webkit-perspective-origin: 162.359px 7.5px;
+            perspective-origin: 162.359px 7.5px;
+    -webkit-transform-origin: 162.359px 7.5px;
+        -ms-transform-origin: 162.359px 7.5px;
+            transform-origin: 162.359px 7.5px;
+    border: 0px none rgb(38, 138, 38);
+    font: normal normal bold normal 13.28px / normal sans-serif;
+    margin: 2px;
+    outline: rgb(38, 138, 38) none 0px;
+}
+
+#mariadefH5_77 {
+    box-sizing: border-box;
+    /*height: 15px;*/
+    min-height: auto;
+    min-width: auto;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 324.719px;*/
+    -webkit-perspective-origin: 162.359px 7.5px;
+            perspective-origin: 162.359px 7.5px;
+    -webkit-transform-origin: 162.359px 7.5px;
+        -ms-transform-origin: 162.359px 7.5px;
+            transform-origin: 162.359px 7.5px;
+    font: normal normal bold normal 13.28px / normal sans-serif;
+    margin: 2px;
+}
+
+#mariadefSPAN_79 {
+    box-sizing: border-box;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    font: normal normal normal normal 13.28px / normal sans-serif;
+    font-weight: normal;
+}
+
+#mariadefH5_78 {
+    box-sizing: border-box;
+    height: 15px;
+    min-height: auto;
+    min-width: auto;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 324.719px;*/
+    -webkit-perspective-origin: 162.359px 7.5px;
+            perspective-origin: 162.359px 7.5px;
+    -webkit-transform-origin: 162.359px 7.5px;
+        -ms-transform-origin: 162.359px 7.5px;
+            transform-origin: 162.359px 7.5px;
+    font: normal normal bold normal 13.28px / normal sans-serif;
+    margin: 2px;
+}
+
+#mariadefHGROUP_75 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 140px;
+    min-height: 140px;
+    text-align: left;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    /*width: 348.719px;*/
+    -webkit-box-pack: center;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+            justify-content: flex-start;
+    -webkit-perspective-origin: 174.359px 70px;
+            perspective-origin: 174.359px 70px;
+    -webkit-transform-origin: 174.359px 70px;
+        -ms-transform-origin: 174.359px 70px;
+            transform-origin: 174.359px 70px;
+    border-top: 1px inset rgba(33, 33, 33, 0.2);
+    border-bottom: 1px inset rgba(33, 33, 33, 0.2);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    font: normal normal normal normal 16px / normal sans-serif;
+    /*margin: 140px 10px 0px;*/
+    padding: 10px;
+}
+
+@media(max-width: 375px) {
+    #mariadefHGROUP_75 {
+      height: 180px;
+      min-height: 180px;
+    }
+}
