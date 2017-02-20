@@ -41,6 +41,13 @@
           </li>
         {{ end }}
 
+
+        {{ if .Site.Params.coTeam.enable }}
+        <li>
+          <a class="page-scroll" href="{{ .Site.BaseURL }}#coTeam">{{ with .Site.Params.navigation.coTeam }}{{ . }}{{ end }}</a>
+        </li>
+        {{ end }}
+
         {{ if .Site.Params.portfolio.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#portfolio">{{ with .Site.Params.navigation.portfolio }}{{ . }}{{ end }}</a>
