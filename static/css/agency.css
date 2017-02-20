@@ -1278,6 +1278,9 @@ aside#collaborators .section-subheading{
     padding: 10px;
 }
 
+.schedule-day-item:hover {
+  background-color: #ddd;
+}
 
 .schedule-day-item-time {
     box-sizing: border-box;
