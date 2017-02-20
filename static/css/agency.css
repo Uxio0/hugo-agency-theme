@@ -994,6 +994,14 @@ section {
   padding-left: 0px;
 }
 
+section#services .section-subheading {
+  line-height: 30px;
+}
+
+section#services .section-subheading strong {
+  color: #352d2d;
+}
+
 section#services .map-container {
     margin-bottom: 75px;
     position:relative; /* Used with overlay class to disable scroll-zoom */
