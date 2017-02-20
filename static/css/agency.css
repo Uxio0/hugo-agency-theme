@@ -1323,6 +1323,10 @@ aside#collaborators .section-subheading{
     margin: 2px;
 }
 
+.schedule-day-item-taller {
+  color: red;
+}
+
 .schedule-day-item-speakersWrapper {
     box-sizing: border-box;
     height: 15px;
