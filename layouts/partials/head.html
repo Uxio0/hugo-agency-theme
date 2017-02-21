@@ -5,6 +5,13 @@
   {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
   {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
   {{ .Hugo.Generator }}
+
+  <!-- OG meta tags -->
+  {{ with .Site.Title }}<meta property="og:title" content="{{ . }}"/>{{ end }}
+  {{ with .Site.Params.ogtags.image }}<meta property="og:image" content="{{ . | absURL }}"/>{{ end }}
+  {{ with .Site.Params.ogtags.description }}<meta property="og:description" content="{{ . }}"/>{{ end }}
+  {{ with .Site.BaseURL }}<meta property="og:url" content="{{ . }}" />{{ end }}
+
   <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
   {{ "<!-- Stylesheets -->" | safeHTML }}
   <link href="{{ "css/bootstrap-v3.3.7/bootstrap.min.css" | absURL }}" rel="stylesheet">
