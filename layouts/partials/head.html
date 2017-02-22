@@ -12,6 +12,14 @@
   {{ with .Site.Params.ogtags.description }}<meta property="og:description" content="{{ . }}"/>{{ end }}
   {{ with .Site.BaseURL }}<meta property="og:url" content="{{ . }}" />{{ end }}
 
+	<!-- Twitter meta tags -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@mariapitadefcon"/>
+  <meta name="twitter:title" content="{{ .Site.Title }}"/>
+  <meta name="twitter:description" content="{{ .Site.Params.ogtags.description }}"/>
+  <meta name="twitter:image" content="{{ .Site.Params.ogtags.image | absURL }}"/>
+
+
   <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
   {{ "<!-- Stylesheets -->" | safeHTML }}
   <link href="{{ "css/bootstrap-v3.3.7/bootstrap.min.css" | absURL }}" rel="stylesheet">
