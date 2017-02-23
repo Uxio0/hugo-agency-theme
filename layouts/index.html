@@ -11,6 +11,10 @@
       {{ partial "services.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.registration.enable }}
+      {{ partial "registration.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.coTeam.enable }}
       {{ partial "coTeam.html" . }}
     {{ end }}

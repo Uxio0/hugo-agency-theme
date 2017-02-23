@@ -1,0 +1,42 @@
+{{ "<!-- Registration -->" | safeHTML }}
+<section id="registration">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.registration.title }}{{ . }}{{ end }}</h2>
+        <h3 class="section-subheading text-muted">{{ with .Site.Params.registration.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 text-center">
+        {{ if .Site.Params.registration.talks.enable }}
+          <a target="_blank" href="{{ .Site.Params.registration.talks.url }}" class="btn btn-xl">
+            {{ with .Site.Params.registration.talks.buttonText }}{{ . }}{{ end }}
+          </a>
+        {{ else }}
+          <a target="_blank" href="{{ .Site.Params.registration.talks.url }}" class="btn btn-xl disabled">
+            {{ with .Site.Params.registration.talks.buttonText }}{{ . }}{{ end }}
+          </a>
+          {{ with .Site.Params.registration.talks.disableHelp }}
+            <p class="help">{{ . }}</p>
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-xs-12 col-sm-6 text-center workshops">
+        {{ if .Site.Params.registration.workshops.enable }}
+          <a target="_blank" href="{{ .Site.Params.registration.workshops.url }}" class="btn btn-xl">
+            {{ with .Site.Params.registration.workshops.buttonText }}{{ . }}{{ end }}
+          </a>
+        {{ else }}
+          <a target="_blank" href="{{ .Site.Params.registration.workshops.url }}" class="btn btn-xl disabled">
+            {{ with .Site.Params.registration.workshops.buttonText }}{{ . }}{{ end }}
+          </a>
+          {{ with .Site.Params.registration.workshops.disableHelp }}
+            <p class="help">{{ . }}</p>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
