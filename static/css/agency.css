@@ -1201,6 +1201,18 @@ aside#collaborators .section-subheading{
   border-radius: 17px;
 }
 
+.clients-list.bronze {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.clients-list.bronze img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /** **/
 
 /* Schedule */

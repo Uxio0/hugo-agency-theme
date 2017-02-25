@@ -70,7 +70,7 @@
           {{ $url := printf "img/logos/%s" .logo }}
           {{ if .link }}
             <a href="{{ .link }}" target="_blank">
-							<img style="max-height: {{ with .maxHeight }} {{ . }} {{ else }} 100px; {{ end }}" src="{{ $url | absURL }}" class="img-responsive img-centered" alt="{{ .alt }}">
+							<img style="max-height: 100px;" src="{{ $url | absURL }}" class="img-responsive img-centered" alt="{{ .alt }}">
             </a>
           {{ else }}
             <img src="{{ $url | absURL }}" class="img-responsive img-centered" alt="{{ .alt }}">
