@@ -9,7 +9,7 @@
 
     <div class="row clients-list">
       {{ range .Site.Params.coTeam.members }}
-        <div class="col-xs-6 col-sm-6 col-md-4 col">
+        <div class="{{ if .increaseLogoSize }} col-xs-10 {{ else }} col-xs-6 {{ end }}col-sm-6 col-md-4 col">
           {{ $url := printf "img/logos/%s" .logo }}
           {{ if .link }}
             <a href="{{ .link }}">
