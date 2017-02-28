@@ -26,7 +26,7 @@
                 {{ .time }}
               </h5>
               <h5 class="schedule-day-item-title">
-                {{ if .taller }} [<span class="schedule-day-item-taller">Taller</span>] {{ end }} {{ .title }} {{ with .duration }} ({{ . }}) {{ end }}
+                {{ if .workshop }} [<span class="schedule-day-item-workshop">Taller</span>] {{ end }} {{ .title }} {{ with .duration }} ({{ . }}) {{ end }}
               </h5>
               <h5 class="schedule-day-item-speakersWrapper">
                 <span class="schedule-day-item-speakers">{{ with .speakers }}{{ . }}{{ end }}</span>
