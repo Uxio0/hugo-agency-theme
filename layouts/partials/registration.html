@@ -25,11 +25,11 @@
       </div>
       <div class="col-xs-12 col-sm-6 text-center workshops">
         {{ if .Site.Params.registration.workshops.enable }}
-          <a target="_blank" href="{{ .Site.Params.registration.workshops.url }}" class="btn btn-xl">
+          <a href="{{ .Site.Params.registration.workshops.url }}" class="btn btn-xl">
             {{ with .Site.Params.registration.workshops.buttonText }}{{ . }}{{ end }}
           </a>
         {{ else }}
-          <a target="_blank" href="{{ .Site.Params.registration.workshops.url }}" class="btn btn-xl disabled">
+          <a href="{{ .Site.Params.registration.workshops.url }}" class="btn btn-xl disabled">
             {{ with .Site.Params.registration.workshops.buttonText }}{{ . }}{{ end }}
           </a>
           {{ with .Site.Params.registration.workshops.disableHelp }}
