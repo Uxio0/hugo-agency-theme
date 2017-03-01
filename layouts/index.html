@@ -31,6 +31,10 @@
       {{ partial "schedule.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.contest.enable }}
+      {{ partial "contest.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.about.enable }}
       {{ partial "about.html" . }}
     {{ end }}

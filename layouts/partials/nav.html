@@ -66,6 +66,12 @@
           </li>
         {{ end }}
 
+        {{ if .Site.Params.contest.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#contest">{{ with .Site.Params.navigation.contest }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
+
         {{ if .Site.Params.about.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#about">{{ with .Site.Params.navigation.about }}{{ . }}{{ end }}</a>
