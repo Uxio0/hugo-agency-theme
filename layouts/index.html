@@ -15,6 +15,10 @@
       {{ partial "registration.html" . }}
     {{ end }}
 
+    {{ if .Site.Params.contest.enable }}
+      {{ partial "contest.html" . }}
+    {{ end }}
+
     {{ if .Site.Params.coTeam.enable }}
       {{ partial "coTeam.html" . }}
     {{ end }}
@@ -29,10 +33,6 @@
 
     {{ if .Site.Params.schedule.enable }}
       {{ partial "schedule.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.contest.enable }}
-      {{ partial "contest.html" . }}
     {{ end }}
 
     {{ if .Site.Params.about.enable }}

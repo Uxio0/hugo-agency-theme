@@ -47,6 +47,11 @@
         </li>
         {{ end }}
 
+        {{ if .Site.Params.contest.enable }}
+          <li>
+            <a class="page-scroll" href="{{ .Site.BaseURL }}#contest">{{ with .Site.Params.navigation.contest }}{{ . }}{{ end }}</a>
+          </li>
+        {{ end }}
 
         {{ if .Site.Params.coTeam.enable }}
         <li>
@@ -63,12 +68,6 @@
         {{ if .Site.Params.schedule.enable }}
           <li>
             <a class="page-scroll" href="{{ .Site.BaseURL }}#schedule">{{ with .Site.Params.navigation.schedule }}{{ . }}{{ end }}</a>
-          </li>
-        {{ end }}
-
-        {{ if .Site.Params.contest.enable }}
-          <li>
-            <a class="page-scroll" href="{{ .Site.BaseURL }}#contest">{{ with .Site.Params.navigation.contest }}{{ . }}{{ end }}</a>
           </li>
         {{ end }}
 
